@@ -50,6 +50,11 @@ public class CacheConfiguration {
             createCache(cm, com.lavanya.domain.User.class.getName());
             createCache(cm, com.lavanya.domain.Authority.class.getName());
             createCache(cm, com.lavanya.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.lavanya.domain.UserProfile.class.getName());
+            createCache(cm, com.lavanya.domain.UserProfile.class.getName() + ".groups");
+            createCache(cm, com.lavanya.domain.Group.class.getName());
+            createCache(cm, com.lavanya.domain.Group.class.getName() + ".members");
+            createCache(cm, com.lavanya.domain.Expense.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
