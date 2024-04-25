@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20240423201707"
+  },
+  "applications": "*",
+  "entityTableName": "jhi_group",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminId",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Group",
+  "relationships": [
+    {
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "groups",
+      "relationshipName": "members",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

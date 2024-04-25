@@ -1,0 +1,28 @@
+
+entity UserProfile {
+  
+  
+  email String
+  
+}
+
+entity Group {
+
+  
+  name String,
+  adminId Integer
+}
+
+entity Expense {
+ 
+  amount String
+}
+
+relationship ManyToOne {
+  Expense{user} to UserProfile,
+  Expense{group} to Group
+}
+
+relationship ManyToMany {
+  Group{members} to UserProfile{groups}
+}
